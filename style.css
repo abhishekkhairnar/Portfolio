@@ -1,0 +1,102 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300&family=Roboto+Mono&family=Rubik&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+    font-family: 'Roboto Mono', monospace;
+    font-family: 'Rubik', sans-serif;
+}
+html,body{
+    width: 100px;
+    height: 100px;
+}
+#bg{
+    width: 100vw;
+    height: 100vh;
+    background-color: #fff;
+}
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 80%;
+    height: 80px;
+    margin: 0 auto;
+    background-color: #fff;
+}
+nav img{
+    width: 110px;
+}
+nav #links{
+    display: flex;
+    align-items: center;
+}
+nav #links a{
+    text-decoration: none;
+    margin-left: 50px;
+}
+nav #links i {
+    margin-left: 50px;
+    color: black;
+    font-size: 12px;
+    font-weight: 700;
+    opacity: .6;
+    letter-spacing: 4px;
+}
+nav #links a:nth-child(2){
+    opacity: .3;
+}
+nav #links a:hover{
+    color: skyblue;
+}
+#sections{
+    display: flex;  
+    height: calc(100%-80px);
+    width: 100%;
+}
+#left{
+    padding-left: 150px;
+    padding-top: 100px;
+    width: 40%;
+    height: 89.2vh;
+}
+#left #smline{
+    width: 50px;
+    height: 3px;
+    background-color: black;
+}
+#left h4{
+    font-size: 30px;
+}
+#left h1{
+    margin-top: 10px;
+}
+#left h5{
+    margin-top: 5px;
+    letter-spacing: 7px;
+    opacity: .6;
+}
+#right{
+    /* border: 2px solid black; */
+    padding-left: 50px;
+    padding-top: 50px;
+    width: 50%;
+    height: 89.2vh;
+}
+@media (max-width:700px) {
+    #left{
+        padding-left: 50px;
+    }
+    #left h1{
+        font-size: large;
+    }
+    #sections{
+        flex-direction: column;
+    }
+}
+#right a{
+    text-decoration: none;
+    color: black;
+    margin: left 20px;
+}
