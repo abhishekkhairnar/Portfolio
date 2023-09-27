@@ -79,24 +79,118 @@ nav #links a:hover{
 }
 #right{
     /* border: 2px solid black; */
+    border: 1px solid black;
+    border-radius: 5px;
     padding-left: 50px;
-    padding-top: 50px;
+    padding-top: 20px;
+    padding-right: 30px;
     width: 50%;
-    height: 89.2vh;
+    height: 100vh;
 }
 @media (max-width:700px) {
     #left{
         padding-left: 50px;
+        height: 100%;
     }
     #left h1{
         font-size: large;
     }
     #sections{
         flex-direction: column;
+
+    }
+    #right{
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        /* overflow: hidden; */
+        width: 90vw;
+        height: 100vh;
+        margin-top: 500px;
+        border: none;
+    }
+    #loader{
+        height: 100vh;
+    }
+    #download{
+        width: 100vw;
     }
 }
 #right a{
     text-decoration: none;
     color: black;
     margin: left 20px;
+}
+#loader{
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 999;
+    width: 100%;    
+    height: 100%;
+    background-color: #fff;
+    animation: anim2 1s cubic-bezier(0.19, 1, 0.22, 1) 5s both;
+}
+#wrapper{
+    overflow: hidden;
+    width: 500px;
+    height: 100px;
+    /* background-color: #dadada; */
+}
+#wrapper .elem{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+}
+#wrapper .elem:nth-child(1){
+    animation: anim 1s cubic-bezier(0.19, 1, 0.22, 1) 1s both;
+}
+#wrapper .elem:nth-child(2){
+    animation: anim 1s cubic-bezier(0.19, 1, 0.22, 1) 2s both;
+}
+#wrapper .elem:nth-child(3){
+    animation: anim 1s cubic-bezier(0.19, 1, 0.22, 1) 3s both;
+}
+@keyframes anim{
+    to{
+        margin-top: -100px;
+    }
+}
+@keyframes anim2{
+    to{
+        transform: translateY(-100%);
+    }
+}
+.media{
+    margin-top: 50px;
+}
+
+.links a {
+    font-size: larger;
+    text-decoration: none;
+    margin: 10px 10px;
+    color: green;
+}
+h4{
+    color: blue;
+}
+#download{
+    margin-top: 30px;
+}
+.download{
+    padding: 20px;
+    background-color: green;
+    color: white;
+    font-weight: bold;
+    font-size: larger;
+    cursor: pointer;
+    border-radius: 5px;
+    text-decoration: none;
 }
