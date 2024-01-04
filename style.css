@@ -108,7 +108,8 @@ nav #links a:hover{
         justify-content: center;
         /* overflow: hidden; */
         width: 90vw;
-        height: 100vh;
+        margin-top:10px;
+        height: 97vh;
         margin-top: 500px;
         border: none;
     }
